@@ -83,13 +83,15 @@ let middleNums = numbers.slice(1, 4)
 // Create an object called 'me' that has the following keys: firstName, state, age, and greeter. The value of the firstName key should be your name as a string. The value of the property state should be your current state or providence of residence as a string. 
 //The value of age should be your age as a number. greeter should be a method that returns the string 'Hello! My name is NAMEVALUE and I live in STATEVALUE' with the corresponding values. 
 
- //let me = {
-//	 firstName: 'Coleman',
-//	 state: 'Utah',
-//age: 23,
-//	 greeter: `Hello! My name is ' this.firstName 'and I live in ${me.state}`
+let me = {
+	firstName: 'Coleman',
+	state: 'Utah',
+	age: 23,
+	greeter: function(){
+		return 'Hello! My name is ' + this.firstName + 'and I live in ' + this.state
+	}
 
- //}
+ }
 
 //////////////////PROBLEM 12////////////////////
 
@@ -159,7 +161,8 @@ let total = myNumbers.reduce(sum)
 
 let myNumbersIndex = []
 function pushNum(num){
-	myNumbersIndex.push(num)
+	let newNum = myNumbers.indexOf(num)
+	myNumbersIndex.push(newNum)
 }
 myNumbers.forEach(pushNum)
 console.log(myNumbersIndex)

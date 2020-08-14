@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .header{
+    height: 10vh;
+    width: 100vw;
+    position: relative;   
+    padding: 20px;
+    z-index: 10;
+    background-color:dimgray;
+}
+  .topLeft {
+      position: absolute;
+      top: 20px;
+      left: 10px;
+      font-size: 40px;
+      color: white;
+  }
+  .topRight{
+      display: flex;
+      position: absolute;
+      top: 40px;
+      right: 10px;
+      word-spacing: 15px;
+      color: white;
+  }
+  .blackBox{
+    position: relative;
+    background-color: black;
+    height: 40vh;
+    width: 100vw;
+  }
+  .text1{
+      padding-top: 150px;
+      color: khaki;
+      font-size: 72px;
+      text-align: center;
+  }
+  .blueBoxes{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+  .blue1{
+      height: 250px;
+      width: 250px;
+      background-color: paleturquoise;
+      margin-top: 50px;
+  }
+  .blue2{
+    height: 250px;
+    width: 250px;
+    background-color: paleturquoise;
+    margin-top: 50px;
+}
+.blue3{
+    height: 250px;
+    width: 250px;
+    background-color: paleturquoise;
+    margin-top: 50px;
+}
+.orangeBoxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.orange1{
+    height: 250px;
+    width: 500px;
+    margin-top: 50px;
+    background-color: sandybrown;
+}
+.orange2{
+    height: 250px;
+    width: 500px;
+    margin-top: 50px;
+    background-color: sandybrown;
+}
+.textImage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.elephant{
+    margin: 50px;
+}
+.textBox{
+    justify-content: center;
+    margin-top: 50px;
+}
+.footer{
+    height: 10vh;
+    width: 100vw;
+    background-color: darkslategray;
+}
